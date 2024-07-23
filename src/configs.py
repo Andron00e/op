@@ -1,18 +1,19 @@
-import os
-import sys
-import peft
 import math
-import torch
+import os
 import random
-import sklearn
-import requests
+import sys
+
 import datasets
-import transformers
 import numpy as np
 import pandas as pd
+import peft
+import requests
 import seaborn as sns
-from IPython.display import display, Markdown
-from torch.utils.data import Dataset, DataLoader
+import sklearn
+import torch
+import transformers
+from IPython.display import Markdown, display
+from torch.utils.data import DataLoader, Dataset
 
 
 class Constatnts:
@@ -48,7 +49,6 @@ def print_trainable_parameters(model):
     print(
         f"trainable params: {trainable_params:,} || all params: {all_param:,} || trainable%: {100 * trainable_params / all_param:.2f}"
     )
-
 
     def print_centered_text(text):
         display(Markdown(f"<center>{text}</center>"))
