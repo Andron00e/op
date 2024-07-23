@@ -17,6 +17,11 @@ from torch.utils.data import DataLoader, Dataset
 
 
 class Constatnts:
+    seed = 42
+    batch_size = 32
+    lr = 1e-3
+    # BERT-like models
+    bert_base_link = ""
     pass
 
 
